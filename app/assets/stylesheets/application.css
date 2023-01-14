@@ -1,0 +1,492 @@
+
+/* Common elements */
+
+
+html {
+  font-family:'Courier New', Courier, monospace;
+}
+
+
+body {
+  background-color: black;
+  color: white; 
+}
+
+
+
+#site-header {
+  position: fixed;
+  height: 80px;
+  background: black;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: all .5s ease;
+  box-shadow: 0 1px 25px rgba(0,0,0, .1);
+}
+
+#site-header.hide {
+  top: -100px;
+}
+
+#liens {
+  letter-spacing: 2px;;
+  position: absolute; 
+  left: 75vw; 
+  top: 35px; 
+  font-size: 20px;
+  z-index: 2;
+}
+
+#liens.hover {
+  text-decoration: line-through; 
+  text-align: center;
+  cursor: pointer; 
+  text-decoration: line-through;
+  color: #f542d1; 
+}
+
+#liens.visited {
+ color: white; 
+ text-decoration: none; 
+}
+
+#hands {
+position: absolute; 
+top: 20px; 
+width: 60px; 
+left: 15px
+}
+
+
+#titre_principal  {
+  color: white; 
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: 25px;
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  z-index: 1;
+}
+
+#introduction  {
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  text-align: left;
+
+}
+
+#introductionbis  {
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: 20px;
+  position: absolute;
+  left: 50px;
+  top: 350px;
+  text-align: left;
+  width: 50%; 
+}
+
+#inbox-message {
+  position: absolute;
+  top: 1450px;
+  font-size: 18px;
+  line-height: 0.7cm;
+  width: 100%; 
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+
+
+
+
+
+/* INDEX ;
+*/
+
+.picture {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  border: 1px solid black;
+  border-width: thin;
+  z-index: -1;
+
+}
+
+#friday {
+  position: absolute;
+  top: 120px;
+  left: 60%;
+  width: 30vw;
+  border: 1px solid black;
+  border-width: thin;
+  border-radius: 30%;
+}
+
+
+
+#titre_1 {
+  position: absolute;
+  top: 800px;
+  left: 150px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#stack {
+ position: absolute;
+ top: 920px;
+ width: 100%; 
+ font-size: 30px;
+ text-align: center;
+ letter-spacing: 1.5px;
+}
+
+#frontstack {
+  position: absolute; 
+  font-size: 20px;
+  top: 1000px; 
+  left: 28%; 
+  text-decoration: underline;
+}
+#backstack {
+  position: absolute; 
+  font-size: 20px;
+  top: 1000px; 
+  width: 100%;
+  margin: auto; 
+  text-align: center;
+  text-decoration: underline;
+
+}
+#framestack {
+  position: absolute; 
+  font-size: 20px;
+  top: 1000px; 
+  left: 66%; 
+  text-decoration: underline;
+
+}
+
+#leftline {
+  position: absolute; 
+  border-left: 1px solid white;
+  height: 250px;
+  width: 1px;
+  left: 27%; 
+  top:1050px; 
+  z-index: 2;
+}
+#midline {
+  position: absolute; 
+  border-left: 1px solid white;
+  height: 250px;
+  width: 1px;
+  top:1050px; 
+  z-index: 2;
+  left: 46.5%; 
+}
+
+#rightline {
+  position: absolute; 
+  border-left: 1px solid white;
+  height: 250px;
+  width: 1px;
+  left: 65%; 
+  top:1050px; 
+  z-index: 2;
+}
+
+.icons {
+  font-size: 50px;
+  writing-mode: vertical-rl; 
+}
+
+.fronties {
+  position: absolute; 
+  left: 25%; 
+}
+
+#htmlicon {
+  position: absolute; 
+  top: 1050px; 
+}
+#css {
+  position: absolute; 
+  top: 1120px; 
+}
+#js {
+  position: absolute; 
+  top: 1190px; 
+}
+
+.backies {
+  position: absolute; 
+  left: 44%; 
+}
+
+#ruby {
+  position: absolute; 
+  top: 1063px; 
+}
+#python {
+  position: absolute; 
+  top: 1133px; 
+}
+
+.framies {
+  position: absolute; 
+  left: 63%; 
+}
+
+#rails {
+  position: absolute; 
+  top: 1060px; 
+}
+
+#django {
+  position: absolute; 
+  top: 1130px; 
+}
+
+.languages {
+position: absolute;
+top: 1050px; 
+line-height: 70px; 
+font-size: 18px; 
+letter-spacing: 1.5px;
+}
+
+#frontlanguages{
+position: absolute; 
+left: 29vw; 
+}
+
+#backlanguages {
+  position: absolute; 
+  left: 48.5vw; 
+  }
+
+#frameworks {
+  position: absolute; 
+  left: 67vw; 
+}
+
+/* OTHER */
+
+
+
+
+#github {
+  font-size: 24px;
+  border: none;
+  text-decoration: none;
+  position: fixed; 
+  left: 2.5vw; 
+  bottom: 6vw; 
+} 
+
+#linkedin {
+  font-size: 24px;
+  border: none;
+  text-decoration: none;
+  position: fixed; 
+  left: 2.5vw; 
+  bottom: 8vw;  
+} 
+
+#email {
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: white; 
+  position:fixed;
+  padding: 0px;
+  font-size: 14px;
+  writing-mode: vertical-rl; 
+  right: 2.5vw; 
+  bottom: 6vw; 
+  z-index: 2;
+}
+
+#v_line {
+  position: fixed; 
+  border-left: 1px solid white;
+  padding: 0px;
+  height: 90px;
+  width: 1px;
+  right: 3vw; 
+  bottom: 0vw; 
+  z-index: 2;
+}
+
+#v_line2 {
+  position: fixed; 
+  border-left: 1px solid white;
+  padding: 0px; 
+  height: 90px;
+  width: 1px;
+  left: 3vw;
+  z-index: 2;
+  bottom: 0vw;    
+}
+
+
+#pinkarrowtouch {
+  position: absolute; 
+  top: 1590px; 
+  left: 43.5vw; 
+  width: 350px; 
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#pinkarrowstack {
+  position: absolute; 
+  top: 907px; 
+  left: 35vw; 
+  width: 280px; 
+  z-index: -1;
+ 
+}
+
+
+.footer {
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: 10px;
+  color: white; 
+  position: absolute;
+  top: 1900px;
+  height: 100px;
+  line-height: 0.7;
+  text-align: center;
+  width: 100%; 
+}
+
+
+
+email:hover{
+  font-size: 22px;
+  font-size-adjust: 20px; 
+  text-decoration: line-through;
+  color: #f542d1; 
+}
+
+email:link{
+  text-decoration: none;
+  color: white; 
+  transition: all 500ms;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: white; 
+  transition: all 500ms;
+
+}
+a:visited {
+  color: white; 
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: line-through;
+  color: #f542d1; 
+  font-size: 22px;
+  font-size-adjust: 20px;
+
+}
+
+a:active {
+  text-decoration: none;
+  color: white; 
+
+}
+/* TYPEWRITER EFFECT */
+
+.container{
+  display: inline-block;
+}
+.typed-out{
+  overflow: hidden;
+  border-right: .20em solid white;
+  border-radius: 2px;
+  white-space: nowrap;
+  animation: 
+    typing 1.5s steps(15, end) forwards,
+    blinking 1.5s infinite 4s;
+  width: 0;
+}
+@keyframes typing {
+from { width: 0 }
+to { width: 35% }
+}
+
+/* bouton */
+#button-30 {
+  align-items: center;
+  background-color: #FCFCFD;
+  color: black; 
+  border-radius: 4px;
+  border-width: 0;
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 48px;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  top: 1700px; 
+  left: 46%; 
+}
+
+
+/* 
+#pointer-dot {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 2.5px solid white;
+  position: fixed;
+  border-radius: 4px;
+  z-index: 101;
+  pointer-events: none;
+  transition: border-color 0.5s;
+}
+
+#pointer-ring {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  padding: 15px;
+  border: 2px solid pink;
+  position: fixed;
+  border-radius: 100px;
+  z-index: 102;
+  pointer-events: none;
+}
+
+html {
+  cursor: none !important;
+}
+
+a {
+  cursor: none !important;
+}
+
+
