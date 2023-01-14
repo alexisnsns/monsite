@@ -3729,3 +3729,12 @@ Processing by MainController#index as HTML
 Completed 200 OK in 71ms (Views: 67.0ms | Allocations: 5977)
 
 
+Started GET "/" for 127.0.0.1 at 2023-01-14 19:35:42 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 94.7ms | Allocations: 30508)
+  Rendered layout layouts/application.html.erb (Duration: 102.7ms | Allocations: 44746)
+Completed 200 OK in 124ms (Views: 105.2ms | ActiveRecord: 0.0ms | Allocations: 47735)
+
+
