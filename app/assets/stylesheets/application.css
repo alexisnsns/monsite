@@ -2,8 +2,9 @@
 /* Common elements */
 
 
-html {
+* {
   font-family:'Courier New', Courier, monospace;
+  cursor: url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 }
 
 
@@ -41,7 +42,6 @@ body {
 #liens.hover {
   text-decoration: line-through; 
   text-align: center;
-  cursor: pointer; 
   text-decoration: line-through;
   color: #f542d1; 
 }
@@ -454,39 +454,48 @@ to { width: 35% }
 }
 
 
-/* 
-#pointer-dot {
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 0;
-  border: 2.5px solid white;
+
+
+
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid white;
+  transition: all 200ms ease-out;
   position: fixed;
-  border-radius: 4px;
-  z-index: 101;
   pointer-events: none;
-  transition: border-color 0.5s;
+  left: 400;
+  top: 400;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 100;
 }
 
-#pointer-ring {
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 0;
-  padding: 15px;
-  border: 2px solid pink;
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: white;
+  opacity: .5;
   position: fixed;
-  border-radius: 100px;
-  z-index: 102;
+  transform: translate(-50%, -50%);
   pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 100;
 }
 
-html {
-  cursor: none !important;
+.hover {
+  background-color: white;
+  opacity: 0.2;
+  z-index: 100;
+  position: fixed;
 }
 
-a {
-  cursor: none !important;
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+  z-index: 100;
+  position: fixed; 
 }
-
-
